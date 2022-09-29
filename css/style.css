@@ -116,7 +116,16 @@ body {
 
 .animais-descricao section.ativo {
   display: block;
-  animation: show .5s forwards;
+}
+
+.animais-descricao section.ativo.show-right {
+  display: block;
+  animation: show-right .5s forwards;
+}
+
+.animais-descricao section.ativo.show-down {
+  display: block;
+  animation: show-down .5s forwards;
 }
 
 .faq {
@@ -231,10 +240,21 @@ body {
   padding: 2rem;
 }
 
-@keyframes show  {
+@keyframes show-right {
   from {
     opacity: 0;
     transform: translate3d(-3rem, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -3rem, 0);
   }
   to {
     opacity: 1;
