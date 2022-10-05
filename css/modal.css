@@ -1,0 +1,88 @@
+.modal-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-container.ativo {
+  display: flex;
+}
+
+.modal {
+  min-width: 60rem;
+  background-color: white;
+  padding: 2rem;
+  border: solid 1rem #FFBB55;
+  box-shadow: 0rem 0rem 0rem 1rem white;
+  position: relative;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -3rem, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ativo .modal {
+  animation: modal .3s forwards;
+}
+
+.fechar {
+  background-color: #EE5544;
+  border: solid 0.4rem white;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: -3rem;
+  right: -3rem;
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, .3);
+}
+
+.modal label {
+  display: block;
+  font-family: 'Playfair Display SC';
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  padding: 1rem 0rem 0.5rem 0rem;
+}
+
+.modal input {
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.modal button[type="submit"] {
+  display: block;
+  background-color: #EE5544;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-family: 'Playfair Display SC';
+  letter-spacing: 0.2rem;
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, .2);
+}
+
+@media (max-width:750px) {
+  .modal {
+    min-width: 80vw;
+  }
+}

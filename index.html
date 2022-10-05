@@ -12,109 +12,135 @@
   <script>document.documentElement.className += ' js';</script>
 </head>
 <body>
-  <nav class="menu js-menu js-scroll">
-    <ul>
-      <li><a href="#animais">ANIMAIS</a></li>
-      <li><a href="./">SOBRE</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contato">CONTATO</a></li>
-      <li><a href="./">LOGIN</a></li>
-    </ul>
-  </nav>
-
-  <section class="grid-section animais js-scroll" id="animais">
-    <h1 class="titulo">ANIMAIS FANTÁSTICOS</h1>
-    <div class="animais-imagens">
-      <div class="animais-imagens-thumb">
-        <img class="raposa" src="img/imagem1.jpg "alt="raposa">
-        <img class="esquilo" src="img/imagem2.jpg" alt="esquilo">
-        <img class="urso" src="img/imagem3.jpg" alt="urso">
-        <img class="lobo" src="img/imagem4.jpg" alt="lobo">
-        <img class="macaco" src="img/imagem5.jpg" alt="macaco">
-        <img class="leao" src="img/imagem6.jpg" alt="leão">
+  <div class="grid-container">
+    <nav class="menu js-menu js-scroll">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu">
+        <li><a href="#animais">ANIMAIS</a></li>
+        <li data-dropdown>
+          <a href="./">SOBRE</a>
+          <ul class="dropdown-menu menu">
+            <li><a href="empresa.html">A EMPRESA</a></li>
+            <li><a href="equipe.html">EQUIPE</a></li>
+            <li><a href="socios.html">SÓCIOS</a></li>
+            <li><a href="investidores.html">INVESTIDORES</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">CONTATO</a></li>
+        <li><a href="./login.html" data-modal="abrir">LOGIN</a></li>
+      </ul>
+    </nav>
+    
+    
+    <section class="grid-section animais js-scroll" id="animais">
+      <h1 class="titulo">ANIMAIS FANTÁSTICOS</h1>
+      <div class="animais-imagens">
+        <div class="animais-imagens-thumb">
+          <img class="raposa" src="img/imagem1.jpg "alt="raposa">
+          <img class="esquilo" src="img/imagem2.jpg" alt="esquilo">
+          <img class="urso" src="img/imagem3.jpg" alt="urso">
+          <img class="lobo" src="img/imagem4.jpg" alt="lobo">
+          <img class="macaco" src="img/imagem5.jpg" alt="macaco">
+          <img class="leao" src="img/imagem6.jpg" alt="leão">
+        </div>
+        <div class="animais-imagens-principal">
+          <img class="raposa" src="img/imagem1.jpg">
+        </div>
       </div>
-      <div class="animais-imagens-principal">
-        <img class="raposa" src="img/imagem1.jpg">
+  
+      <div class="animais-descricao">
+        <section class="ativo" data-anime="show-right">
+          <h2 class="titulo-secundario">RAPOSA</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+        </section>
+        <section data-anime="show-down">
+          <h2 class="titulo-secundario">ESQUILO</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, iure. Qui voluptate quam laudantium accusantium consectetur quos nam odit neque maxime, veniam error sapiente quae obcaecati molestias culpa eius vel?</p>
+        </section>
+        <section data-anime="show-right">
+          <h2 class="titulo-secundario">URSO</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+        </section>
+        <section data-anime="show-down">
+          <h2 class="titulo-secundario">LOBO</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+        </section>
+        <section data-anime="show-right">
+          <h2 class="titulo-secundario">MACACO</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+        </section>
+        <section data-anime="show-down">
+          <h2 class="titulo-secundario">LEÃO</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda l-onga e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+        </section>
       </div>
+    </section>
+  
+    <section class="grid-section faq js-faq js-scroll" id="faq">
+      <h1 class="titulo">FAQ</h1>
+      <dl>
+        <dt class="ativo">Qual a idade dos animais?</dt>
+        <dd class="ativo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+  
+        <dt>Eles são fantásticos?</dt>
+        <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+  
+        <dt>Qual a diferença?</dt>
+        <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+  
+        <dt>Como proteger?</dt>
+        <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+  
+      </dl>
+    </section>
+  
+    <section class="grid-section contato js-scroll" id="contato">
+      <h1 class="titulo">CONTATO</h1>
+      
+      <div class="mapa" data-tooltip aria-label="Endereço aqui rua 06 bairro algum.">
+        <img src="img/mapa.jpg">
+      </div>
+  
+      <ul>
+        <li>contato@origamid.com</li>
+        <li>+55 (21) 9999-9999</li>
+        <li>Rua do Conde, nº 21</li>
+        <li>Rio de Janeiro - RJ</li>
+        <li>Doe <span class="bitcoin">0.9999</span> bitcoin para nos ajudar</li>
+        <li>Seg à Sex das 8 às 18</li>
+      </ul>
+    </section>
+  
+    <footer class="copy">
+      <p>Projeto de estudo feito por <a href="https://github.com/gustavogularte" target="_blank">Gustavo Gularte</a></p>
+    </footer>
+  </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button class="fechar" data-modal="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+        <button type="submit">Entrar</button>
+      </form>
     </div>
-
-    <div class="animais-descricao">
-      <section class="ativo" data-anime="show-right">
-        <h2 class="titulo-secundario">RAPOSA</h2>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-      </section>
-      <section data-anime="show-down">
-        <h2 class="titulo-secundario">ESQUILO</h2>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, iure. Qui voluptate quam laudantium accusantium consectetur quos nam odit neque maxime, veniam error sapiente quae obcaecati molestias culpa eius vel?</p>
-      </section>
-      <section data-anime="show-right">
-        <h2 class="titulo-secundario">URSO</h2>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-      </section>
-      <section data-anime="show-down">
-        <h2 class="titulo-secundario">LOBO</h2>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-      </section>
-      <section data-anime="show-right">
-        <h2 class="titulo-secundario">MACACO</h2>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-      </section>
-      <section data-anime="show-down">
-        <h2 class="titulo-secundario">LEÃO</h2>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda l-onga e peluda.</p>
-        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-        <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-      </section>
-    </div>
   </section>
-
-  <section class="grid-section faq js-faq js-scroll" id="faq">
-    <h1 class="titulo">FAQ</h1>
-    <dl>
-      <dt class="ativo">Qual a idade dos animais?</dt>
-      <dd class="ativo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-
-      <dt>Eles são fantásticos?</dt>
-      <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
-
-      <dt>Qual a diferença?</dt>
-      <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-
-      <dt>Como proteger?</dt>
-      <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
-
-    </dl>
-  </section>
-
-  <section class="grid-section contato js-scroll" id="contato">
-    <h1 class="titulo">CONTATO</h1>
-
-    <img src="img/mapa.jpg">
-
-    <ul>
-      <li>contato@origamid.com</li>
-      <li>+55 (21) 9999-9999</li>
-      <li>Rua do Conde, nº 21</li>
-      <li>Rio de Janeiro - RJ</li>
-      <li>Doe <span class="bitcoin">0.9999</span> bitcoin para nos ajudar</li>
-      <li>Seg à Sex das 8 às 18</li>
-    </ul>
-  </section>
-
-  <footer class="copy">
-    <p>Projeto de estudo feito por <a href="https://github.com/gustavogularte" target="_blank">Gustavo Gularte</a></p>
-  </footer>
-
 
   <script type="module" src="./js/script.js"></script>
 </body>
