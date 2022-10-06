@@ -15,6 +15,7 @@ html {
   font-family: Helvetica, Arial, sans-serif;
   box-sizing: border-box;
   list-style: none;
+  color: #222;
 }
 
 img {
@@ -92,6 +93,10 @@ body {
   object-fit: cover;
   object-position: 30%; 
   cursor: pointer;
+}
+
+.animais-imagens-thumb img:hover {
+  filter: brightness(50%);
 }
 
 .titulo-secundario {
@@ -305,7 +310,7 @@ body {
     grid-column: 1/3;
   }
 
-  .contato img {
+  .mapa {
     grid-column: 1/4;
   }
 
@@ -316,6 +321,7 @@ body {
   .copy {
     grid-column: 1/5;
     margin-bottom: 0rem;
+    text-align: center;
   }
 }
 

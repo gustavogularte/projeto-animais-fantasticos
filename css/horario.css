@@ -1,0 +1,19 @@
+.horario.aberto::after {
+  content: '';
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: green;
+  border: 0.2rem solid black;
+}
+
+.horario.fechado::after {
+  content: '';
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: red;
+  border: 0.2rem solid black;
+}

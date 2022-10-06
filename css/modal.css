@@ -54,6 +54,10 @@
   box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, .3);
 }
 
+.fechar:hover {
+  background-color: #cc3423;
+}
+
 .modal label {
   display: block;
   font-family: 'Playfair Display SC';
@@ -79,6 +83,10 @@
   font-family: 'Playfair Display SC';
   letter-spacing: 0.2rem;
   box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, .2);
+}
+
+.modal button[type="submit"]:hover {
+  background-color: #cc3423;
 }
 
 @media (max-width:750px) {
