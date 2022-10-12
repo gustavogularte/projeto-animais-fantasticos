@@ -237,6 +237,7 @@ body {
 .bitcoin {
   background-color: #33FF44;
   padding: 0.3rem 1rem;
+  font-weight: bold;
 }
 
 .copy {
