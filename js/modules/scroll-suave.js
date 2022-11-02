@@ -1,6 +1,6 @@
 export default function initScrollSuave() {
   const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
-  
+
   function scrollToSection(event) {
     event.preventDefault();
     const href = this.getAttribute('href');
@@ -10,8 +10,8 @@ export default function initScrollSuave() {
       block: 'start',
     });
   }
-  
-  linksInternos.forEach(link => {
+
+  linksInternos.forEach((link) => {
     link.addEventListener('click', scrollToSection);
-  })
+  });
 }
