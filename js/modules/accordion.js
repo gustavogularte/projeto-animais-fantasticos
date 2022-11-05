@@ -18,5 +18,6 @@ export default class Accordion {
     if (this.dt.length) {
       this.addEvent();
     }
+    return this;
   }
 }
