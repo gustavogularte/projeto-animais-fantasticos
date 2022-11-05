@@ -1,12 +1,22 @@
-export default function initAccordion() {
-  const dt = document.querySelectorAll('.js-faq dt');
+export default class Accordion {
+  constructor(list) {
+    this.dt = document.querySelectorAll(list);
+  }
 
-  function mostrarPergunta() {
+  mostrarPergunta() {
     this.nextElementSibling.classList.toggle('ativo');
     this.classList.toggle('ativo');
   }
 
-  dt.forEach((perguntas) => {
-    perguntas.addEventListener('click', mostrarPergunta);
-  });
+  addEvent() {
+    this.dt.forEach((perguntas) => {
+      perguntas.addEventListener('click', this.mostrarPergunta);
+    });
+  }
+
+  init() {
+    if (this.dt.length) {
+      this.addEvent();
+    }
+  }
 }
