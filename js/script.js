@@ -24,7 +24,6 @@ modal.init();
 
 const tooltip = new Tooltip();
 tooltip.init();
-console.log('teste');
 
 initAnimacaoScroll();
 initDropdownMenu();
