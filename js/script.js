@@ -7,7 +7,7 @@ import Tooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initHorario from './modules/horario.js';
-import initAnimaisFetch from './modules/animais-fetch.js';
+import fetchAnimais from './modules/animais-fetch.js';
 import initBitcoinFetch from './modules/bitcoin-fetch.js';
 
 const scrollSuave = new ScrollSuave('.js-menu a[href^="#"]');
@@ -29,5 +29,6 @@ initAnimacaoScroll();
 initDropdownMenu();
 initMenuMobile();
 initHorario();
-initAnimaisFetch();
 initBitcoinFetch();
+
+fetchAnimais('./animaisapi.json', '.grid-numeros');
