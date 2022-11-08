@@ -1,18 +1,38 @@
-export default function initHorario() {
-  const agora = new Date();
-  const infoHorarios = document.querySelector('[data-semana]');
-  const horarios = infoHorarios.dataset.horarios.split(',').map(Number);
-  const dias = infoHorarios.dataset.semana.split(',').map(Number);
+export default class Horario {
+  constructor(infoHorarios) {
+    this.infoHorarios = document.querySelector(infoHorarios);
+  }
 
-  const horaAgora = agora.getHours();
-  const diaAgora = agora.getDay();
-  const horaAberto = horaAgora >= horarios[0] && horaAgora < horarios[1];
-  const diaAberto = !!dias.indexOf(diaAgora);
-  const aberto = diaAberto && horaAberto;
+  funcionamento() {
+    this.horarios = this.infoHorarios.dataset.horarios.split(',').map(Number);
+    this.dias = this.infoHorarios.dataset.semana.split(',').map(Number);
+  }
 
-  if (aberto) {
-    infoHorarios.classList.add('aberto');
-  } else {
-    infoHorarios.classList.add('fechado');
+  agora() {
+    this.agora = new Date();
+    this.horaAgora = this.agora.getUTCHours() - 3;
+    this.diaAgora = this.agora.getDay();
+  }
+
+  estaAberto() {
+    this.horaAberto = this.horaAgora >= this.horarios[0] && this.horaAgora < this.horarios[1];
+    this.diaAberto = !!this.dias.indexOf(this.diaAgora);
+
+    return this.diaAberto && this.horaAberto;
+  }
+
+  ativarStatus() {
+    if (this.estaAberto()) {
+      this.infoHorarios.classList.add('aberto');
+    } else {
+      this.infoHorarios.classList.add('fechado');
+    }
+  }
+
+  init() {
+    this.funcionamento();
+    this.agora();
+    this.ativarStatus();
+    return this;
   }
 }
