@@ -8,7 +8,7 @@ import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initHorario from './modules/horario.js';
 import fetchAnimais from './modules/animais-fetch.js';
-import initBitcoinFetch from './modules/bitcoin-fetch.js';
+import bitcoinFetch from './modules/bitcoin-fetch.js';
 
 const scrollSuave = new ScrollSuave('.js-menu a[href^="#"]');
 scrollSuave.init();
@@ -29,6 +29,7 @@ initAnimacaoScroll();
 initDropdownMenu();
 initMenuMobile();
 initHorario();
-initBitcoinFetch();
 
 fetchAnimais('./animaisapi.json', '.grid-numeros');
+
+bitcoinFetch('https://blockchain.info/ticker', '.bitcoin');
