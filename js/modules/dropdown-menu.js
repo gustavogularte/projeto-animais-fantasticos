@@ -6,8 +6,6 @@ export default class initDropdownMenu {
   }
 
   handleClick(e) {
-    console.log(this)
-    console.log(e.currentTarget)
     e.preventDefault();
     this.classList.add('ativo');
     outsideClick(this, ['touchstart', 'click'], () => {
