@@ -40,5 +40,6 @@ export default class AnimaNumeros {
 
   init() {
     this.addObserver();
+    return this;
   }
 }
