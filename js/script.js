@@ -6,7 +6,7 @@ import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
-import initHorario from './modules/horario.js';
+import Horario from './modules/horario.js';
 import fetchAnimais from './modules/animais-fetch.js';
 import bitcoinFetch from './modules/bitcoin-fetch.js';
 
@@ -34,7 +34,8 @@ dropdown.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-initHorario();
+const horario = new Horario('[data-semana]');
+horario.init();
 
 fetchAnimais('./animaisapi.json', '.grid-numeros');
 
