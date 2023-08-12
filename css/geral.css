@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #FAF6ED;
+  color: #222222;
+  font-size: 1.8rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 9rem minmax(30rem, 80rem) 1fr;
+  gap: 4rem;
+}
+
+.grid-conteudo {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 9rem 30rem 1fr;
+  padding-bottom: 8rem;
+  gap: 4rem;
+}
+
+.titulo {
+  grid-column: 1/4;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1;
+  padding-bottom: 2rem;
+}

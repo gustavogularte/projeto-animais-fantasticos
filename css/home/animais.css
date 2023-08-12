@@ -1,0 +1,33 @@
+.animais-imagens {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 0.8rem;
+}
+
+.animais-imagens-thumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  overflow-y: auto;
+  max-height: 45rem;
+}
+
+.animais-imagens-thumb img {
+  cursor: pointer;
+}
+
+
+.animais-descricao {
+  grid-column: 3;
+}
+
+.animais-descricao h2 {
+  font-family: monospace;
+  text-transform: uppercase;
+  color: #E54;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 1.2rem;
+}
