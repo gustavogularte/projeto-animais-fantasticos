@@ -10,7 +10,27 @@
   flex-wrap: wrap;
   gap: 2rem;
   overflow-y: auto;
-  max-height: 45rem;
+  max-height: 35rem;
+}
+
+.animais-imagens-thumb::-webkit-scrollbar {
+  width: 1.8rem;
+  display: block;
+  max-height: 1rem;
+}
+
+.animais-imagens-thumb::-webkit-scrollbar-thumb {
+  background-color: #fb5;
+  border-left: 0.4rem solid #FAF6ED;
+  border-right: 0.4rem solid #FAF6ED;
+  display: block;
+  height: 1rem;
+}
+
+.animais-imagens-thumb::-webkit-scrollbar-track {
+  background-color: #FAF6ED;
+  display: block;
+  max-height: 1rem;
 }
 
 .animais-imagens-thumb img {
@@ -22,12 +42,31 @@
   grid-column: 3;
 }
 
+.animais-descricao section {
+  display: none;
+}
+
+.animais-descricao section.ativo {
+  display: block;
+}
+
 .animais-descricao h2 {
   font-family: monospace;
   text-transform: uppercase;
   color: #E54;
-  letter-spacing: 0.2rem;
-  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
   font-weight: 900;
   padding-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.animais-descricao h2::before {
+  content: '';
+  background-color: #fb5;
+  height: 1rem;
+  width: 4rem;
+  display: inline-block;
 }
