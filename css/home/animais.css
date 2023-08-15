@@ -37,6 +37,11 @@
   cursor: pointer;
 }
 
+.animais-imagens-thumb img:hover {
+  filter: brightness(50%);
+  transition: .3s;
+}
+
 
 .animais-descricao {
   grid-column: 3;

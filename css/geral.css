@@ -26,6 +26,11 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: #E54;
+  transition: .3s;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -42,7 +47,7 @@ button {
   grid-column: 2/4;
   display: grid;
   grid-template-columns: 9rem 30rem 1fr;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   gap: 4rem;
 }
 

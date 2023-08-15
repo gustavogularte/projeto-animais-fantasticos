@@ -1,0 +1,17 @@
+.footer {
+  grid-column: 3/5;
+  background-color: #fb5;
+  margin-bottom: 2rem;
+  padding: 2.4rem;
+}
+
+.footer p {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.footer a {
+  padding: 1.2rem 0;
+}
