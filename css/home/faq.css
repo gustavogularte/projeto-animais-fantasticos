@@ -21,3 +21,9 @@
   width: 2.4rem;
   display: inline-block;
 }
+
+@media (max-width:800px) {
+  .faq {
+    grid-column: 1/4;
+  }
+}

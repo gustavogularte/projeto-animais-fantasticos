@@ -16,3 +16,18 @@
   font-weight: 700;
   color: #E54;
 }
+
+@media (max-width:800px) {
+  .numeros {
+    grid-column: 1/4;
+    gap: 4rem;
+  }
+
+  .numeros h3 {
+    font-size: 2.4rem;
+  }
+
+  .numeros span {
+    font-size: 1.8rem;
+  }
+}

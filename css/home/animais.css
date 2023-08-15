@@ -75,3 +75,13 @@
   width: 4rem;
   display: inline-block;
 }
+
+@media (max-width:800px) {
+  .animais-imagens {
+    grid-column: 1;
+  }
+
+  .animais-descricao {
+    grid-column: 1;
+  }
+}

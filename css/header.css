@@ -12,6 +12,7 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  flex-wrap: wrap;
 }
 
 .header-menu a {
@@ -21,4 +22,11 @@
 
 .menu-mobile {
   display: none;
+}
+
+@media (max-width:800px) {
+  .header-bg {
+    grid-column: 1;
+    margin-top: 0;
+  }
 }

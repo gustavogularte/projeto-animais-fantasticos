@@ -1,5 +1,6 @@
 .mapa {
   grid-column: 2;
+  max-width: 30rem;
 }
 
 .contatos {
@@ -19,4 +20,15 @@
   height: 1rem;
   width: 2.4rem;
   display: inline-block;
+}
+
+@media (max-width:800px) {
+  .mapa {
+    grid-column: 1/4;
+    padding-bottom: 2rem;
+  }
+
+  .contatos {
+    grid-column: 1/4;
+  }
 }
