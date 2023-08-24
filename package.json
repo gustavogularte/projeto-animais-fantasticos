@@ -1,0 +1,24 @@
+{
+  "name": "projeto-animais-fantasticos",
+  "version": "1.0.0",
+  "description": "Projeto do curso de Javascript Completo ES6 da Origamid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavogularte/projeto-animais-fantasticos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavogularte/projeto-animais-fantasticos/issues"
+  },
+  "homepage": "https://github.com/gustavogularte/projeto-animais-fantasticos#readme",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1"
+  }
+}

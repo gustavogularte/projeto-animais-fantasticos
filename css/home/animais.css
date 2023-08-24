@@ -26,11 +26,11 @@
   grid-column: 3;
 }
 
-.animais-descricao section {
+[data-animais="animaisDescricao"] section {
   display: none;
 }
 
-.animais-descricao section.ativo {
+[data-animais="animaisDescricao"] section.ativo {
   display: block;
 }
 
