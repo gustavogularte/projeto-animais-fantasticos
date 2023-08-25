@@ -1,4 +1,5 @@
 import TabNav from './modules/tabnav.js';
+import Accordion from './modules/accordion.js';
 
 const tabnav = new TabNav(
   '[data-animais="imgPrincipal"]',
@@ -6,3 +7,6 @@ const tabnav = new TabNav(
   '[data-animais="animaisConteudo"] section',
 );
 tabnav.init();
+
+const accordion = new Accordion('[data-accordion="faq"] dt');
+accordion.init();

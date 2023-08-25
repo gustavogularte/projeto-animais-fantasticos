@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./js/modules/accordion.js":
+/*!*********************************!*\
+  !*** ./js/modules/accordion.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Accordian)\n/* harmony export */ });\nclass Accordian {\n  constructor(perguntas) {\n    this.perguntas = document.querySelectorAll(perguntas);\n\n    this.ativarResposta = this.ativarResposta.bind(this);\n  }\n\n  ativarResposta(e) {\n    e.currentTarget.nextElementSibling.classList.toggle('ativo');\n    const ariaExpanded = e.target.getAttribute('aria-expanded');\n    if (ariaExpanded === 'true') {\n      e.target.setAttribute('aria-expanded', false);\n    } else {\n      e.target.setAttribute('aria-expanded', true);\n    }\n  }\n\n  addEvent() {\n    this.perguntas.forEach((pergunta) => {\n      pergunta.addEventListener('click', this.ativarResposta);\n    });\n  }\n\n  init() {\n    if (this.perguntas.length) {\n      this.addEvent();\n    }\n  }\n}\n\n\n//# sourceURL=webpack://projeto-animais-fantasticos/./js/modules/accordion.js?");
+
+/***/ }),
+
 /***/ "./js/modules/tabnav.js":
 /*!******************************!*\
   !*** ./js/modules/tabnav.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_tabnav_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/tabnav.js */ \"./js/modules/tabnav.js\");\n\n\nconst tabnav = new _modules_tabnav_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\n  '[data-animais=\"imgPrincipal\"]',\n  '[data-animais=\"animaisThumbs\"] img',\n  '[data-animais=\"animaisConteudo\"] section',\n);\ntabnav.init();\n\n\n//# sourceURL=webpack://projeto-animais-fantasticos/./js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_tabnav_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/tabnav.js */ \"./js/modules/tabnav.js\");\n/* harmony import */ var _modules_accordion_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/accordion.js */ \"./js/modules/accordion.js\");\n\n\n\nconst tabnav = new _modules_tabnav_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\n  '[data-animais=\"imgPrincipal\"]',\n  '[data-animais=\"animaisThumbs\"] img',\n  '[data-animais=\"animaisConteudo\"] section',\n);\ntabnav.init();\n\nconst accordion = new _modules_accordion_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('[data-accordion=\"faq\"] dt');\naccordion.init();\n\n\n//# sourceURL=webpack://projeto-animais-fantasticos/./js/script.js?");
 
 /***/ })
 
