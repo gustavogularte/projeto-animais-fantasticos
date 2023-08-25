@@ -22,19 +22,19 @@
 }
 
 
-.animais-descricao {
+.animais-conteudo {
   grid-column: 3;
 }
 
-[data-animais="animaisDescricao"] section {
+[data-animais="animaisConteudo"] section {
   display: none;
 }
 
-[data-animais="animaisDescricao"] section.ativo {
+[data-animais="animaisConteudo"] section.ativo {
   display: block;
 }
 
-.animais-descricao h2 {
+.animais-conteudo h2 {
   font-family: monospace;
   text-transform: uppercase;
   color: #E54;
@@ -47,7 +47,7 @@
   gap: 0.8rem;
 }
 
-.animais-descricao h2::before {
+.animais-conteudo h2::before {
   content: '';
   background-color: #fb5;
   height: 1rem;
@@ -64,7 +64,7 @@
     padding-bottom: 2rem;
   }
 
-  .animais-descricao {
+  .animais-conteudo {
     grid-column: 1;
   }
 }
