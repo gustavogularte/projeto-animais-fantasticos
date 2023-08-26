@@ -24,12 +24,25 @@
   display: inline-block;
 }
 
-[data-accordion="faq"] dd {
+.js [data-accordion="faq"] dd {
   display: none;
+  animation: animeDown .6s forwards;
 }
 
 [data-accordion="faq"] dd.ativo {
   display: block;
+}
+
+@keyframes animeDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 30rem;
+  }
 }
 
 @media (max-width:800px) {

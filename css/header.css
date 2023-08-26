@@ -2,7 +2,6 @@
   grid-column: 3/5;
   background-color: #fb5;
   margin-top: 2rem;
-  padding: 1.2rem 0.8rem;
 }
 
 .header-menu {
@@ -16,7 +15,7 @@
 }
 
 .header-menu a {
-  padding: 0.8rem 1.6rem;
+  padding: 2.4rem;
   display: block;
 }
 

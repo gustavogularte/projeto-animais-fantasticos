@@ -26,7 +26,7 @@
   grid-column: 3;
 }
 
-[data-animais="animaisConteudo"] section {
+.js [data-animais="animaisConteudo"] section {
   display: none;
 }
 
