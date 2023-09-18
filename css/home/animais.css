@@ -33,6 +33,12 @@
 [data-animais="animaisConteudo"] section.ativo {
   display: block;
 }
+[data-animais="animaisConteudo"] section.ativo.show-down {
+  animation: show-down .6s forwards;
+}
+[data-animais="animaisConteudo"] section.ativo.show-right {
+  animation: show-right .6s forwards;
+}
 
 .animais-conteudo h2 {
   font-family: monospace;

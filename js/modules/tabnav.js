@@ -16,7 +16,7 @@ export default class TabNav {
     this.conteudo.forEach((section) => {
       section.classList.remove('ativo');
     });
-    this.conteudo[index].classList.add('ativo');
+    this.conteudo[index].classList.add('ativo', this.conteudo[index].dataset.anime);
   }
 
   addEvent() {
