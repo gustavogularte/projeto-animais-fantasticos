@@ -1,0 +1,23 @@
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -3rem, 0);
+  }
+}
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-3rem, 0, 0);
+  }
+}
+
+.js [data-anime="scroll"] {
+  opacity: 0;
+  transition: 0.3s;
+  transform: translate3d(-3rem, 0, 0);
+}
+
+[data-anime="scroll"].ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

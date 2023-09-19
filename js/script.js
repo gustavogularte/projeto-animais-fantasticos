@@ -1,6 +1,7 @@
 import TabNav from './modules/tabnav.js';
 import Accordion from './modules/accordion.js';
 import ScrollSuave from './modules/scrollSuave.js';
+import ScrollAnimacao from './modules/scrollAnimacao.js';
 
 const tabnav = new TabNav(
   '[data-animais="imgPrincipal"]',
@@ -14,3 +15,6 @@ accordion.init();
 
 const scrollSuave = new ScrollSuave('[data-menu="menu"] a[href^="#"]');
 scrollSuave.init();
+
+const scrollAnimacao = new ScrollAnimacao('[data-anime="scroll"]');
+scrollAnimacao.init();

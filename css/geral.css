@@ -61,19 +61,6 @@ button {
   padding-bottom: 2rem;
 }
 
-@keyframes show-down {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -3rem, 0);
-  }
-}
-@keyframes show-right {
-  from {
-    opacity: 0;
-    transform: translate3d(-3rem, 0, 0);
-  }
-}
-
 @media (max-width:800px) {
   .grid {
     grid-template-columns: 1fr;
