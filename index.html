@@ -24,7 +24,7 @@
         </li>
         <li><a href="#faq">Faq</a></li>
         <li><a href="#contato">Contato</a></li>
-        <li><a href="/">Login</a></li>
+        <li><a type="button" data-modal="abrir">Login ▶</a></li>
       </ul>
     </nav>
   </header>
@@ -138,6 +138,18 @@
   <footer class="footer">
     <p><a href="https://www.origamid.com" target="_blank">Origamid</a> © Projeto feito por <a href="https://github.com/gustavogularte" target="_blank">Gustavo Gularte Arend</a>.</p>
   </footer>
+  
+  <!-- Modal -->
+  <section class="modal-container" data-modal="modal" aria-hidden="true">
+    <form class="modal">
+      <button type="button" class="modal-fechar" data-modal="fechar" aria-label="Fechar">X</button>
+      <label for="emal">Email</label>
+      <input type="email" name="email" id="email">
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha">
+      <button type="button" class="modal-entrar">Entrar</button>
+    </form>
+  </section>
 
   <script type="module" src="main.js"></script>
 </body>
