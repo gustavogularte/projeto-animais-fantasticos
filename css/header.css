@@ -17,6 +17,7 @@
 .header-menu a {
   padding: 2.4rem;
   display: block;
+  cursor: pointer;
 }
 
 .modal-container {

@@ -5,16 +5,23 @@ export default class Modal {
     this.fechar = document.querySelector(fechar);
 
     this.toggleModal = this.toggleModal.bind(this);
+    this.clickFora = this.clickFora.bind(this);
   }
 
-  toggleModal(e) {
+  toggleModal() {
     this.modalContainer.classList.toggle('ativo');
-    console.log(e.target)
+  }
+
+  clickFora(e) {
+    if (e.target === this.modalContainer) {
+      this.toggleModal();
+    }
   }
 
   addEvent() {
     this.abrir.addEventListener('click', this.toggleModal);
     this.fechar.addEventListener('click', this.toggleModal);
+    this.modalContainer.addEventListener('click', this.clickFora);
   }
 
   init() {
