@@ -3,11 +3,12 @@ import Accordion from './modules/accordion.js';
 import ScrollSuave from './modules/scrollSuave.js';
 import ScrollAnimacao from './modules/scrollAnimacao.js';
 import Modal from './modules/modal.js';
+import Tooltip from './modules/tooltip.js';
 
 const tabnav = new TabNav(
   '[data-animais="imgPrincipal"]',
   '[data-animais="animaisThumbs"] img',
-  '[data-animais="animaisConteudo"] section'
+  '[data-animais="animaisConteudo"] section',
 );
 tabnav.init();
 
@@ -26,3 +27,6 @@ const modal = new Modal(
   '[data-modal="fechar"]',
 );
 modal.init();
+
+const tooltip = new Tooltip('[data-tooltip]');
+tooltip.init();

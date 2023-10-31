@@ -3,6 +3,18 @@
   max-width: 30rem;
 }
 
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid #fb5;
+  box-shadow: 0 0 0 0.3rem rgba(0, 0, 0, 0.6);
+}
+
 .contatos {
   grid-column: 3;
 }
