@@ -12,12 +12,48 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .header-menu a {
   padding: 2rem;
   display: block;
   cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #E54;
+  display: grid;
+  padding: 1rem;
+  border: 0.2rem solid #222222;
+  top: 5rem;
+  display: none;
+}
+
+.dropdown-menu a {
+  padding: 1rem;
+}
+
+.dropdown-menu a:hover {
+  color: #ffffff;
+}
+
+.dropdown-menu::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 1.2rem solid transparent;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid #E54;
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+}
+
+[data-dropdown]:hover .dropdown-menu {
+  display: grid;
 }
 
 .modal-container {
