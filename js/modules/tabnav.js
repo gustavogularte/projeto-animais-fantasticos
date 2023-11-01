@@ -31,5 +31,6 @@ export default class TabNav {
     if (this.imgPrincipal && this.thumbs.length && this.conteudo.length) {
       this.addEvent();
     }
+    return this;
   }
 }

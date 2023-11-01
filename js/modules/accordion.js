@@ -25,5 +25,6 @@ export default class Accordian {
     if (this.perguntas.length) {
       this.addEvent();
     }
+    return this;
   }
 }

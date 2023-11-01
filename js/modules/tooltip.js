@@ -41,5 +41,6 @@ export default class Tooltip {
     if (this.img) {
       this.addEvent();
     }
+    return this;
   }
 }

@@ -52,7 +52,8 @@
   left: 1rem;
 }
 
-[data-dropdown]:hover .dropdown-menu {
+[data-dropdown]:hover .dropdown-menu,
+[data-dropdown].ativo .dropdown-menu {
   display: grid;
 }
 

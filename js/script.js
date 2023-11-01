@@ -4,6 +4,7 @@ import ScrollSuave from './modules/scrollSuave.js';
 import ScrollAnimacao from './modules/scrollAnimacao.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
+import Dropdown from './modules/dropdown.js';
 
 const tabnav = new TabNav(
   '[data-animais="imgPrincipal"]',
@@ -30,3 +31,6 @@ modal.init();
 
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
+
+const dropdown = new Dropdown('[data-dropdown]');
+dropdown.init();

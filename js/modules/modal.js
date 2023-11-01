@@ -28,5 +28,6 @@ export default class Modal {
     if (this.modalContainer && this.abrir && this.fechar) {
       this.addEvent();
     }
+    return this;
   }
 }

@@ -22,5 +22,6 @@ export default class ScrollAnimacao {
     if (this.sections.length) {
       this.addEvent();
     }
+    return this;
   }
 }
