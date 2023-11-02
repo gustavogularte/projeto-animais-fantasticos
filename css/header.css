@@ -78,6 +78,7 @@
     text-transform: uppercase;
     font-family: monospace;
     font-size: 1.6rem;
+    font-weight: bold;
     margin: 1.2rem;
     position: relative;
     z-index: 400;
@@ -95,7 +96,7 @@
 
   .header-menu {
     display: none;
-    max-width: 18rem;
+    width: 18rem;
     position: absolute;
     background-color: #fb5;
     box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.2);
@@ -112,13 +113,12 @@
   }
 
   .dropdown-menu {
-    display: block;
     position: static;
     border: none;
     padding: 0;
   }
 
   .dropdown-menu::before {
-    display: none;
+    top: 13.8rem;
   }
 }

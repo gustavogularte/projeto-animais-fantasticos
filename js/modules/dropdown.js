@@ -1,4 +1,4 @@
-import cliqueFora from './clickFora';
+import clickFora from './clickFora';
 
 export default class Dropdown {
   constructor(dropdown) {
@@ -8,12 +8,19 @@ export default class Dropdown {
   abrirDropdown(e) {
     e.preventDefault();
     const elemento = e.currentTarget;
-    elemento.classList.add('ativo');
+    elemento.classList.toggle('ativo');
 
     if (elemento.getAttribute('aria-expanded') === 'false') {
-      cliqueFora(this, () => {
+      clickFora(this, () => {
         this.classList.remove('ativo');
+        elemento.setAttribute('aria-expanded', 'false');
       });
+    }
+
+    if (elemento.classList.contains('ativo')) {
+      elemento.setAttribute('aria-expanded', 'true');
+    } else {
+      elemento.setAttribute('aria-expanded', 'false');
     }
   }
 

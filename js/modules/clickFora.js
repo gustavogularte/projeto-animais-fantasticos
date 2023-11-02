@@ -1,19 +1,12 @@
-export default function cliqueFora(elemento, callback) {
-  const userEvents = ['touchstart', 'click'];
+export default function clickFora(elemento, callback) {
   const html = document.documentElement;
 
-  function ativarCliqueFora({ target }) {
+  function ativarClickFora({ target }) {
     if (!elemento.contains(target)) {
-      elemento.setAttribute('aria-expanded', 'false');
       callback();
-      userEvents.forEach((userEvent) => {
-        html.removeEventListener(userEvent, ativarCliqueFora);
-      });
+      html.removeEventListener('click', ativarClickFora);
     }
   }
 
-  elemento.setAttribute('aria-expanded', 'true');
-  userEvents.forEach((userEvent) => {
-    html.addEventListener(userEvent, ativarCliqueFora);
-  });
+  setTimeout(() => html.addEventListener('click', ativarClickFora));
 }

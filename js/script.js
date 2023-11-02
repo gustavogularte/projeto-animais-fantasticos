@@ -5,6 +5,7 @@ import ScrollAnimacao from './modules/scrollAnimacao.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import Dropdown from './modules/dropdown.js';
+import MenuMobile from './modules/menuMobile.js';
 
 const tabnav = new TabNav(
   '[data-animais="imgPrincipal"]',
@@ -12,25 +13,21 @@ const tabnav = new TabNav(
   '[data-animais="animaisConteudo"] section',
 );
 tabnav.init();
-
 const accordion = new Accordion('[data-accordion="faq"] dt');
 accordion.init();
-
 const scrollSuave = new ScrollSuave('[data-menu="menu"] a[href^="#"]');
 scrollSuave.init();
-
 const scrollAnimacao = new ScrollAnimacao('[data-anime="scroll"]');
 scrollAnimacao.init();
-
 const modal = new Modal(
   '[data-modal="modal"]',
   '[data-modal="abrir"]',
   '[data-modal="fechar"]',
 );
 modal.init();
-
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
-
 const dropdown = new Dropdown('[data-dropdown]');
 dropdown.init();
+const menuMobile = new MenuMobile('[data-menu="menuBotao"]', '[data-menu="menu"]');
+menuMobile.init();
