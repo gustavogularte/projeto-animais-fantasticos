@@ -6,6 +6,7 @@ import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import Dropdown from './modules/dropdown.js';
 import MenuMobile from './modules/menuMobile.js';
+import AnimaisNumeros from './modules/animaisNumeros.js';
 
 const tabnav = new TabNav(
   '[data-animais="imgPrincipal"]',
@@ -29,5 +30,13 @@ const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 const dropdown = new Dropdown('[data-dropdown]');
 dropdown.init();
-const menuMobile = new MenuMobile('[data-menu="menuBotao"]', '[data-menu="menu"]');
+const menuMobile = new MenuMobile(
+  '[data-menu="menuBotao"]',
+  '[data-menu="menu"]',
+);
 menuMobile.init();
+const animaisNumeros = new AnimaisNumeros(
+  '[data-observer]',
+  '[data-numeros] span',
+);
+animaisNumeros.init();

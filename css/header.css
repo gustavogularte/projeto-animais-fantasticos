@@ -67,7 +67,7 @@
     margin-top: 0;
   }
 
-  .menu-mobile {
+  .js .menu-mobile {
     display: flex;
     align-items: center;
     gap: 0.4rem;
@@ -85,7 +85,7 @@
     cursor: pointer;
   }
   
-  .menu-mobile::before {
+  .js .menu-mobile::before {
     content: '';
     display: inline-block;
     width: 1.2rem;
@@ -94,7 +94,7 @@
     box-shadow: 0 0.4rem #ffffff, 0 -0.4rem #ffffff;
   }
 
-  .header-menu {
+  .js .header-menu {
     display: none;
     width: 18rem;
     position: absolute;
@@ -104,21 +104,21 @@
     padding-top: 6rem;
     padding-bottom: 1.2rem;
   }
-  .header-menu.ativo {
+  .js .header-menu.ativo {
     display: block;
   }
 
-  .header-menu a {
+  .js .header-menu a {
     padding: 1.2rem 6rem 1.2rem 1.2rem;
   }
 
-  .dropdown-menu {
+  .js .dropdown-menu {
     position: static;
     border: none;
     padding: 0;
   }
 
-  .dropdown-menu::before {
+  .js .dropdown-menu::before {
     top: 13.8rem;
   }
 }
