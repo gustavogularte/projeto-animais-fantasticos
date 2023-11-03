@@ -40,6 +40,19 @@
   font-weight: bold;
 }
 
+.horario::after {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: red;
+  border-radius: 50%;
+  border: 0.2rem solid #000;
+}
+
+.horario.aberto::after{
+  background-color: green;
+}
+
 @media (max-width:800px) {
   .mapa {
     grid-column: 1/4;
