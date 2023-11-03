@@ -7,6 +7,7 @@ import Tooltip from './modules/tooltip.js';
 import Dropdown from './modules/dropdown.js';
 import MenuMobile from './modules/menuMobile.js';
 import AnimaisNumeros from './modules/animaisNumeros.js';
+import Horario from './modules/horario.js';
 
 const tabnav = new TabNav(
   '[data-animais="imgPrincipal"]',
@@ -40,3 +41,5 @@ const animaisNumeros = new AnimaisNumeros(
   '[data-numeros] span',
 );
 animaisNumeros.init();
+const horario = new Horario('[data-semana]', '[data-horario]');
+horario.init();
