@@ -106,6 +106,7 @@
   }
   .js .header-menu.ativo {
     display: block;
+    animation: show-right .3s forwards;
   }
 
   .js .header-menu a {
