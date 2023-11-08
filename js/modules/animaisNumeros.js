@@ -9,13 +9,17 @@ export default class animaisNumeros {
   }
 
   async fetchAnimais() {
-    const response = await fetch('../animaisapi.json');
-    const json = await response.json();
-    this.animais.forEach((animal, index) => {
-      animal.innerText = json[index].especie;
-      this.numeros[index].innerText = json[index].total;
-    });
-    this.animarNumeros();
+    try {
+      const response = await fetch('../animaisapi.json');
+      const json = await response.json();
+      this.animais.forEach((animal, index) => {
+        animal.innerText = json[index].especie;
+        this.numeros[index].innerText = json[index].total;
+      });
+      this.animarNumeros();
+    } catch (erro) {
+      console.log(erro);
+    }
   }
 
   animarNumeros() {
