@@ -39,6 +39,7 @@ menuMobile.init();
 const animaisNumeros = new AnimaisNumeros(
   '[data-observer]',
   '[data-numeros] span',
+  '[data-numeros] h3',
 );
 animaisNumeros.init();
 const horario = new Horario('[data-semana]', '[data-horario]');
