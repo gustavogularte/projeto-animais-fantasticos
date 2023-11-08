@@ -27,6 +27,9 @@ export default class Horario {
   }
 
   init() {
-    this.dataHoje();
+    if (this.semana && this.horario) {
+      this.dataHoje();
+    }
+    return this;
   }
 }
