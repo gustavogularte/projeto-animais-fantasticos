@@ -70,9 +70,11 @@ button {
     grid-column: 1;
     grid-template-columns: 1fr;
     gap: 0;
+    justify-items: center;
   }
 
   .titulo {
     font-size: 4.4rem;
+    justify-self: start;
   }
 }
