@@ -8,6 +8,7 @@ import Dropdown from './modules/dropdown.js';
 import MenuMobile from './modules/menuMobile.js';
 import AnimaisNumeros from './modules/animaisNumeros.js';
 import Horario from './modules/horario.js';
+import Bitcoin from './modules/bitcoin.js';
 
 const tabnav = new TabNav(
   '[data-animais="imgPrincipal"]',
@@ -44,3 +45,5 @@ const animaisNumeros = new AnimaisNumeros(
 animaisNumeros.init();
 const horario = new Horario('[data-semana]', '[data-horario]');
 horario.init();
+const bitcoin = new Bitcoin('[data-btc]');
+bitcoin.init();
