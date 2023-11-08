@@ -17,5 +17,6 @@ export default class Bitcoin {
     if (this.bitcoinSpan) {
       this.fetchBtc();
     }
+    return this;
   }
 }
