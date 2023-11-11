@@ -9,7 +9,7 @@ export default class animaisNumeros {
 
   async fetchAnimais() {
     try {
-      const response = await fetch('../../animaisapi.json');
+      const response = await fetch('../animaisapi.json');
       const json = await response.json();
       this.animais.forEach((animal, index) => {
         animal.innerText = json[index].especie;
