@@ -1,7 +1,9 @@
+import debounce from './debounce';
+
 export default class ScrollAnimacao {
   constructor(sections) {
     this.sections = document.querySelectorAll(sections);
-    this.ativarSection = this.ativarSection.bind(this);
+    this.ativarSection = debounce(this.ativarSection.bind(this), 50);
   }
 
   ativarSection() {
