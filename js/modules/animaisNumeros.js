@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 export default class animaisNumeros {
   constructor(section, numeros, animais) {
     this.sectionObserver = document.querySelector(section);
