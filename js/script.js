@@ -10,6 +10,7 @@ import AnimaisNumeros from './modules/animaisNumeros.js';
 import Horario from './modules/horario.js';
 import Bitcoin from './modules/bitcoin.js';
 import Slide from './modules/slide.js';
+import SlideAnimais from './modules/slideAnimais.js';
 
 const tabnav = new TabNav(
   '[data-animais="imgPrincipal"]',
@@ -62,3 +63,6 @@ bitcoin.init();
 const slide = new Slide('.slide-wrapper', '.slide');
 slide.init();
 slide.addControl('.custom-control');
+
+const slideAnimais = new SlideAnimais('[data-animais="nav"]', '[data-animais="animaisThumbs"]');
+slideAnimais.init();

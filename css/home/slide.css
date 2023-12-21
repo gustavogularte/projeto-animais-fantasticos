@@ -72,3 +72,18 @@
   transform: scale(1);
   transition: .3s;
 }
+
+@media (max-width: 800px) {
+  .slide-container {
+    justify-items: initial;
+  }
+
+  .slide {
+    gap: 2rem;
+  }
+
+  .custom-control li{
+    width: 4rem;
+    height: 4rem;
+  }
+}

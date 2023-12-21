@@ -2,25 +2,48 @@
   grid-column: 2/3;
 }
 
-.animais-imagens-thumb {
-  display: flex;
-  gap: 2rem;
+.animais-navegacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.animais-navegacao button {
+  font-size: 2.4rem;
+  color: #fb5;
+  cursor: pointer;
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+.animais-navegacao :nth-child(1) {
+  transform: rotate(180deg);
+}
+
+.animais-slide {
   max-width: 22rem;
   overflow-x: hidden;
   margin: 0 auto;
+}
+
+.animais-imagens-thumb {
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
   padding-top: 0.8rem;
+  
 }
 
 .animais-imagens-thumb img {
   cursor: pointer;
   max-width: 6rem;
+  overflow: hidden;
 }
 
 .animais-imagens-thumb img:hover {
   filter: brightness(50%);
   transition: .3s;
 }
-
 
 .animais-conteudo {
   grid-column: 3;

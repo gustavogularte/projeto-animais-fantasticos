@@ -40,14 +40,20 @@
     <h1 class="titulo">Animais fantásticos</h1>
     <section class="animais-imagens">
       <img data-animais="imgPrincipal" src="img/imagem1.jpg" alt="Foto de uma raposa">
-      <ul class="animais-imagens-thumb" data-animais="animaisThumbs">
-        <li><button><img src="img/imagem1.jpg" alt="Foto de uma raposa"></button></li>
-        <li><button><img src="img/imagem2.jpg" alt="Foto de um esquilo"></button></li>
-        <li><button><img src="img/imagem3.jpg" alt="Foto de um urso"></button></li>
-        <li><button><img src="img/imagem4.jpg" alt="Foto de um lobo"></button></li>
-        <li><button><img src="img/imagem5.jpg" alt="Foto de um macaco"></button></li>
-        <li><button><img src="img/imagem6.jpg" alt="Foto de um leão"></button></li>
-      </ul>
+      <div class="animais-slide">
+        <ul class="animais-imagens-thumb" data-animais="animaisThumbs">
+          <li><button><img src="img/imagem1.jpg" alt="Foto de uma raposa"></button></li>
+          <li><button><img src="img/imagem2.jpg" alt="Foto de um esquilo"></button></li>
+          <li><button><img src="img/imagem3.jpg" alt="Foto de um urso"></button></li>
+          <li><button><img src="img/imagem4.jpg" alt="Foto de um lobo"></button></li>
+          <li><button><img src="img/imagem5.jpg" alt="Foto de um macaco"></button></li>
+          <li><button><img src="img/imagem6.jpg" alt="Foto de um leão"></button></li>
+        </ul>
+      </div>
+      <nav class="animais-navegacao" data-animais="nav">
+        <button type="button" aria-label="próxima imagem">➜</button>
+        <button type="button" aria-label="imagem anterior">➜</button>
+      </nav>
     </section>
     <article class="animais-conteudo" data-animais="animaisConteudo">
       <section class="ativo" data-anime="show-right">
