@@ -6,7 +6,6 @@ export default class SlideAnimais {
 
     this.changePrev = this.changePrev.bind(this);
     this.changeNext = this.changeNext.bind(this);
-    console.log(this.slide.offsetWidth)
   }
 
   changePrev() {
