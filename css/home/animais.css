@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+  padding-bottom: 1.2rem;
 }
 
 .animais-navegacao button {
@@ -31,7 +32,7 @@
   gap: 2rem;
   margin: 0 auto;
   padding-top: 0.8rem;
-  
+  transition: .3s ease;
 }
 
 .animais-imagens-thumb img {
@@ -87,10 +88,6 @@
 @media (max-width:800px) {
   .animais-imagens {
     grid-column: 1;
-  }
-
-  .animais-imagens-thumb {
-    padding-bottom: 2rem;
   }
 
   .animais-conteudo {

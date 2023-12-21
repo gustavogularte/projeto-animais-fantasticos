@@ -1,24 +1,29 @@
 export default class SlideAnimais {
-  constructor(buttons, slide) {
-    this.buttons = document.querySelectorAll(buttons);
+  constructor(slide, prev, next) {
     this.slide = document.querySelector(slide);
+    this.prev = document.querySelector(prev);
+    this.next = document.querySelector(next);
 
-    this.changeSlide = this.changeSlide.bind(this);
-    console.log(this.slide.clientWidth)
+    this.changePrev = this.changePrev.bind(this);
+    this.changeNext = this.changeNext.bind(this);
+    console.log(this.slide.offsetWidth)
   }
 
-  changeSlide() {
-    this.slide.style.transform = `translate3d(${-this.slide.clientWidth}px, 0, 0)`;
+  changePrev() {
+    this.slide.style.transform = 'translate3d(0, 0, 0)';
+  }
+
+  changeNext() {
+    this.slide.style.transform = 'translate3d(-240px, 0, 0)';
   }
 
   addEvent() {
-    this.buttons.forEach((button) => {
-      button.addEventListener('click', this.changeSlide);
-    });
+    this.prev.addEventListener('click', this.changePrev);
+    this.next.addEventListener('click', this.changeNext);
   }
 
   init() {
-    if (this.buttons.length) {
+    if (this.prev && this.next && this.slide) {
       this.addEvent();
     }
     return this;

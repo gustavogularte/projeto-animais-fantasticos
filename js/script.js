@@ -64,5 +64,5 @@ const slide = new Slide('.slide-wrapper', '.slide');
 slide.init();
 slide.addControl('.custom-control');
 
-const slideAnimais = new SlideAnimais('[data-animais="nav"]', '[data-animais="animaisThumbs"]');
+const slideAnimais = new SlideAnimais('[data-animais="animaisThumbs"]', '[data-animais="slidePrev"]', '[data-animais="slideNext"]');
 slideAnimais.init();
